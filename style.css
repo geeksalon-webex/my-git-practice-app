@@ -1,8 +1,9 @@
 :root {
   --main-color: #b23b61;
   --text-color: #000;
+  --text-hover-color: #fff;
   --button-bg-color: #fff;
-  --button-bg-hover-color: #b2ae3b;
+  --button-bg-hover-color: #b23b61;
 }
 
 .memo-list {
@@ -56,9 +57,9 @@
   border-radius: 5px;
 }
 
-.memo:hover .memo__delete {
-  color: var(--text-color);
-}
+/* .memo:hover .memo__delete {
+  color: var(--text-hover-color);
+} */
 
 .add-memo-field {
   display: flex;
