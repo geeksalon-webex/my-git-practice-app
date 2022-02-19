@@ -1,9 +1,16 @@
 :root {
   --main-color: #b23b61;
-  --text-color: #000;
+  --text-color: #fff;
   --text-hover-color: #fff;
+  --button-border-color: #000;
   --button-bg-color: #fff;
-  --button-bg-hover-color: #b23b61;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  border: solid 1px var(--button-border-color);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
 }
 
 .memo-list {
@@ -46,20 +53,7 @@
 
 .memo__delete {
   margin-left: 1rem;
-  padding: 0.5rem 0.5rem;
-  border: solid 1px var(--text-color);
-  border-radius: 5px;
-  background-color: var(--button-bg-color);
 }
-
-.memo__delete:hover {
-  background-color: var(--button-bg-hover-color);
-  border-radius: 5px;
-}
-
-/* .memo:hover .memo__delete {
-  color: var(--text-hover-color);
-} */
 
 .add-memo-field {
   display: flex;
@@ -69,15 +63,4 @@
 
 .add-memo-field__input {
   padding: 10px;
-}
-.add-memo-field__button {
-  padding: 0.5rem 0.5rem;
-  border: solid 1px var(--text-color);
-  border-radius: 5px;
-  background-color: var(--button-bg-color);
-}
-
-.add-memo-field__button:hover {
-  background-color: var(--button-bg-hover-color);
-  border-radius: 5px;
 }

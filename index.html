@@ -18,7 +18,9 @@
             {{ index }}:{{ memo.text }}
           </div>
           <div v-else class="memo__text">{{ index }}:{{ memo.text }}</div>
-          <div v-on:click="deleteMemo(index)" class="memo__delete">削除</div>
+          <button v-on:click="deleteMemo(index)" class="memo__delete">
+            削除
+          </button>
         </li>
       </ul>
       <div class="add-memo-field">
