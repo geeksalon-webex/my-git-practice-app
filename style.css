@@ -64,3 +64,9 @@ button {
 .add-memo-field__input {
   padding: 10px;
 }
+
+.add-memo-field__button:hover {
+  border-color: var(--main-color);
+  color: var(--text-hover-color);
+  background-color: var(--main-color);
+}

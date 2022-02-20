@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="app" class="memo-list">
+      <h1>Vue メモアプリ</h1>
       <ul class="memo-list__container">
         <li v-for="(memo, index) in memos" v-bind:key="index" class="memo">
           <div class="memo__checkbox">
@@ -31,5 +32,7 @@
       </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+  </body>
   </body>
 </html>
